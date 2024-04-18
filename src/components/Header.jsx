@@ -1,24 +1,24 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
       <div className="container">
         <div className="inner-content">
           <div className="brand">
-            <a to="/">Movies</a>
+            <Link to="/">Movies</Link>
           </div>
           <ul className="nav-links">
             <li>
-              <a to="/">Watch List</a>
+              <NavLink to="/">Watch List</NavLink>
             </li>
             <li>
-              <a to="/watched">Watched</a>
+              <NavLink to="/watched">Watched</NavLink>
             </li>
             <li>
-              <a to="/add" className="btn">
+              <NavLink to="/add" className="btn">
                 Add
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
